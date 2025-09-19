@@ -1,0 +1,14 @@
+Gazebo multi-robot simulator, version 11.11.0
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+(1718208102 752732943) [Msg] Waiting for master.
+(1718208102 753617834) Failed to create connection to remote host[localhost:11345]
+(1718208103 756917790) [Msg] Connected to gazebo master @ http://127.0.0.1:11345
+(1718208103 757008189) [Msg] Publicized address: 172.18.0.2
+(1718208103 757342085) Loaded .ini file from: "/home/dockeruser/.gazebo/gui.ini"
+(1718208103 903542649) [Wrn] [GuiIface.cc:120] QStandardPaths: XDG_RUNTIME_DIR points to non-existing path '/run/user/1000/', please create it with 0700 permissions.
+(1718208105 136094195) No spacenav daemon found. Spacenav functionality is disabled
+(1718208302 18664031) [Err] [JointControlWidget.cc:393] Error advertising topic [/vehicle/joint_cmd]
