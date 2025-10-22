@@ -14,6 +14,9 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y \
     ros-${ROS_DISTRO}-gazebo-* \
     ros-${ROS_DISTRO}-rmw-cyclonedds-cpp \
+    ros-${ROS_DISTRO}-nav2-*\
+    ros-${ROS_DISTRO}-turtlebot3-gazebo\
+    ros-${ROS_DISTRO}-turtlebot3-navigation2\
     python-is-python3 \
     nano \
     less \
@@ -25,6 +28,9 @@ RUN apt-get update && apt-get install -y \
 # Switch to a non-root user.
 # RUN useradd -m --uid ${user_id} dockeruserjazzy
 # USER dockeruserjazzy
+
+# Set up environment for TurtleBot3 (replace "burger" with your model)
+ENV TURTLEBOT3_MODEL burger
 
 # Working directory
 WORKDIR /home/dockeruserjazzy
